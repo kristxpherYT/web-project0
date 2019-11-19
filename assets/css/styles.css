@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Gayathri";
+  src: url("../fonts/Gayathri/Gayathri-Regular.ttf");
+}
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Canela";
+  src: url("../fonts/Canela/canela_roman.otf");
+}
+header {
+  position: absolute;
+  padding-top: 4em;
+  z-index: 2;
+  width: 100%;
+  color: #fff;
+}
+
+.master-title {
+  color: #b9b4d2;
+  font-family: Canela, serif;
+  font-size: 1.3em;
+}
+
+.header-inner {
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.master-nav a {
+  color: #ccc;
+}
+
+.master-nav a:hover {
+  color: #fff;
+  border-bottom: 0.2em solid #fff;
+  padding-bottom: 0.1em;
+}
+
+@media (min-width: 48em) {
+  .master-title {
+    float: left;
+  }
+
+  .master-nav {
+    float: right;
+  }
+}
+#first_section {
+  padding-top: 11em;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5em;
+}
+
+#second-section {
+  padding: 5em 2em 1em 2em;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.home-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 68em;
+}
+
+.home-header-text {
+  z-index: 2;
+  color: #fff;
+  margin-top: 3em;
+}
+
+.home-header-text-title {
+  font-size: 10em;
+  width: 100%;
+  text-align: left;
+  max-width: 4em;
+  font-family: Gayathri, sans-serif;
+}
+
+.home-header-text-p {
+  font-size: 0.9em;
+  text-align: left;
+  padding-left: 2em;
+  font-family: Muli, sans-serif;
+}
+
+.home-header-image {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  max-width: 55em;
+  width: 800px;
+}
+
+.home-header-image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.home-header-image:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.home-header-image-bg {
+  background-image: url("../images/home-bg.jpg");
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 4px 6px;
+}
+
+#projects-list {
+  display: flex;
+  padding-top: 11em;
+  height: 100%;
+  width: 100%;
+}
+
+.card-div {
+  display: flex;
+  justify-content: center;
+}
+
+.card-view {
+  justify-content: center;
+  padding-top: 20px;
+  color: #ddd;
+  width: 350px;
+  height: 400px;
+  background-color: #37474f;
+  box-shadow: 3px 5px 8px black;
+  border-radius: 8px;
+}
+
+.card-title {
+  border-bottom: 1px solid #ddd;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.card-text li {
+  padding-top: 10px;
+}
+
+#studies {
+  display: flex;
+  padding-top: 11em;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.image {
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 50%;
+}
+
+#image-1 {
+  background-image: url("../images/smart-tbolt.png");
+}
+
+#image-2 {
+  background-image: url("../images/scava.png");
+}
+
+#image-3 {
+  background-image: url("../images/twilio.png");
+}
+
+#studies-table td, #studies-table th {
+  border: 1px solid #ddd;
+  color: #ddd;
+  padding: 10px;
+}
+
+#studies-table th {
+  font-size: 20px;
+}
+#studies-table .description {
+  text-align: left;
+}
+
+#gallery-section {
+  padding-top: 11em;
+  display: flex;
+  justify-content: center;
+}
+#gallery-section #gallery-container {
+  display: flex;
+}
+#gallery-section .gallery-image {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 4px 3px 8px black;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+#gallery-section .gallery-text {
+  position: absolute;
+  color: #ddd;
+  font-size: 30px;
+  font-weight: bold;
+  z-index: 10;
+}
+#gallery-section .image-xl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 415px;
+  margin-bottom: 15px;
+}
+#gallery-section .image-xs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  margin-bottom: 15px;
+}
+#gallery-section .image-xs:hover .gallery-image,
+#gallery-section .image-xl:hover .gallery-image {
+  opacity: 1;
+}
+#gallery-section .image-xs:hover .gallery-text,
+#gallery-section .image-xl:hover .gallery-text {
+  color: #000;
+}
+
+#soccer-image {
+  background-image: url("../images/soccer.jpg");
+}
+
+#computer-image {
+  background-image: url("../images/programming.jpeg");
+}
+
+#guitar-image {
+  background-image: url("../images/play-guitar.jpg");
+}
+
+#sing-image {
+  background-image: url("../images/singing.jpg");
+}
+
+#chess-image {
+  background-image: url("../images/chess.jpeg");
+}
+
+#table-tennis-image {
+  background-image: url("../images/table-tennis.jpg");
+}
+
+#video-games-image {
+  background-image: url("../images/video-games.jpg");
+}
+
+.bg-black {
+  background-color: #242528;
+}
+
+/*# sourceMappingURL=styles.css.map */
